@@ -9,12 +9,17 @@ RCT_EXPORT_MODULE()
         @"isTablet": @([self isTablet]),
         @"deviceInch": @([self deviceInch]),
         @"dpi": @([self dpi])
+        @"navbar": @([self getNavbarValue])
     };
 }
 
 + (BOOL)requiresMainQueueSetup
 {
     return YES;
+}
+
+- (NSInteger)getNavbarValue {
+    return 0;
 }
 
 - (float) dpi

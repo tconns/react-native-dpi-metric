@@ -17,10 +17,10 @@ const DpiMetric = NativeModules.DpiMetric
       }
     );
 
-const { deviceInch, dpi, isTablet } = DpiMetric.getConstants();
+const { deviceInch, dpi, isTablet, navbar } = DpiMetric.getConstants();
 
 export function multiply(a: number, b: number): Promise<number> {
   return DpiMetric.multiply(a, b);
 }
 
-export { deviceInch, dpi, isTablet };
+export { deviceInch, dpi, isTablet, navbar };
