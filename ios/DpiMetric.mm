@@ -8,7 +8,7 @@ RCT_EXPORT_MODULE()
     return @{
         @"isTablet": @([self isTablet]),
         @"deviceInch": @([self deviceInch]),
-        @"dpi": @([self dpi])
+        @"dpi": @([self dpi]),
         @"navbar": @([self getNavbarValue])
     };
 }
